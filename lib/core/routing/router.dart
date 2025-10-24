@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tam_tam_app/core/routing/routes_name.dart';
-import 'package:tam_tam_app/home/home_view.dart';
+import 'package:tam_tam_app/views/home/home_view.dart';
 import 'package:tam_tam_app/views/auth/auth_view.dart';
 import 'package:tam_tam_app/views/initial_and_select_lang/initial_view.dart';
 import 'package:tam_tam_app/views/initial_and_select_lang/select_language_view.dart';
