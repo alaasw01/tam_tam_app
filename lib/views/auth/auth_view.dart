@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tam_tam_app/constants/app_color.dart';
@@ -9,7 +10,8 @@ import 'package:tam_tam_app/custom_widgets/custom_selection_containers.dart';
 import 'package:tam_tam_app/custom_widgets/custom_text_field.dart';
 part '../auth/cubit/auth_cubit.dart';
 part '../auth/cubit/auth_state.dart';
-part '../auth/widgets/login_body.dart';
+part 'widgets/login_body.dart';
+part 'widgets/sing_up_body.dart';
 
 class AuthView extends StatelessWidget {
   const AuthView({super.key});
@@ -73,7 +75,7 @@ class AuthView extends StatelessWidget {
                       SizedBox(height: 20),
                       cubit.selectedAuth == 'Login'
                           ? LoginBody(cubit: cubit)
-                          : Text('sign up'),
+                          : SignUpBody(cubit: cubit),
                     ],
                   ),
                 );

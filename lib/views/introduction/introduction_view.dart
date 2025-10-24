@@ -5,8 +5,8 @@ import 'package:tam_tam_app/constants/app_style.dart';
 import 'package:tam_tam_app/core/routing/routes_name.dart';
 import 'package:tam_tam_app/custom_widgets/custom_button.dart';
 
-class InitialView extends StatelessWidget {
-  const InitialView({super.key});
+class IntroductionView extends StatelessWidget {
+  const IntroductionView({super.key});
 
   @override
   Widget build(BuildContext context) {

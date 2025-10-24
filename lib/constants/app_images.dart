@@ -4,4 +4,9 @@ class AppImages {
   static const String auth = '$imageBase/auth.png';
   static const String initImg = '$imageBase/init_img.png';
   static const String selectLangImg = '$imageBase/select_lang_img.png';
+  static const String categories = '$imageBase/categories.png';
+  static const String cart = '$imageBase/cart.png';
+  static const String offers = '$imageBase/offers.png';
+  static const String profile = '$imageBase/profile.png';
+  static const String home = '$imageBase/home.png';
 }

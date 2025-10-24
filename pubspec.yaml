@@ -33,6 +33,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1
+  persistent_bottom_nav_bar: ^6.2.1
 
 dev_dependencies:
   flutter_lints: ^5.0.0
@@ -65,8 +66,5 @@ flutter:
     - family: Poppins
       fonts:
         - asset: assets/fonts/Poppins-Light.ttf
-
-
-  
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
