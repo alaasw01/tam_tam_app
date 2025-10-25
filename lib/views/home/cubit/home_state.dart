@@ -4,3 +4,5 @@ part of '../home_view.dart';
 sealed class HomeState {}
 
 final class HomeInitial extends HomeState {}
+
+final class HomeChangeNavBarIndex extends HomeState {}

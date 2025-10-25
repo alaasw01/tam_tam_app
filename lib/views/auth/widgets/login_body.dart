@@ -30,8 +30,8 @@ class LoginBody extends StatelessWidget {
         CustomTextFormField(
           obscureText: cubit.obscureText,
           suffixIcon: cubit.obscureText == true
-              ? Icons.visibility_off
-              : Icons.visibility,
+              ? Icon(Icons.visibility_off)
+              : Icon(Icons.visibility),
 
           onSuffixIconTap: cubit.changeVisibility,
           label: 'Password',

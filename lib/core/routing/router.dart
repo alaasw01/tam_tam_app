@@ -21,9 +21,7 @@ class RouterClass {
       case RouteNames.home:
         return MaterialPageRoute(builder: (_) => const HomeView());
       case RouteNames.navBar:
-        return MaterialPageRoute(
-          builder: (_) => const CustomBottomNavigationBar(),
-        );
+        return MaterialPageRoute(builder: (_) => const CustomBottomNavBar());
 
       default:
         return MaterialPageRoute(

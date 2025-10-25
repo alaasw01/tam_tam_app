@@ -9,4 +9,20 @@ class AppImages {
   static const String offers = '$imageBase/offers.png';
   static const String profile = '$imageBase/profile.png';
   static const String home = '$imageBase/home.png';
+  static const String girl = '$imageBase/girl.png';
+  static const String notification = '$imageBase/notification.png';
+  static const String menu = '$imageBase/menu.png';
+  static const String filter = '$imageBase/filter.png';
+  static const String search = '$imageBase/search.png';
+  static const String sliderImg = '$imageBase/slider_img.png';
+  static const String girlsGroup = '$imageBase/girls_group.png';
+  static const String boysGroup = '$imageBase/boys_group.png';
+  static const String category1 = '$imageBase/category1.png';
+  static const String category2 = '$imageBase/category2.png';
+  static const String unicorn = '$imageBase/unicorn.png';
+  static const String barby = '$imageBase/barby.png';
+  static const String paw = '$imageBase/paw.png';
+  static const String lol = '$imageBase/lol.png';
+  static const String fire = '$imageBase/fire.png';
+  static const String slideGroup = '$imageBase/slide_group.png';
 }

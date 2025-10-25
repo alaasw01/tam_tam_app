@@ -2,57 +2,44 @@ part of '../home_view.dart';
 
 class HomeCubit extends Cubit<HomeState> {
   HomeCubit() : super(HomeInitial());
-  PersistentTabController controller = PersistentTabController(initialIndex: 2);
-  List<Widget> buildScreens() {
-    return [
-      const Center(child: Text('Cart')),
-      const Center(child: Text('Offers')),
-      const HomeView(),
-      const Center(child: Text('Categories')),
-      const Center(child: Text('Profile')),
-    ];
-  }
+  int selectedIndex = 2;
+  TextEditingController searchController = TextEditingController();
 
-  List<PersistentBottomNavBarItem> navBarsItems() {
-    return [
-      PersistentBottomNavBarItem(
-        icon: ImageIcon(AssetImage(AppImages.cart)),
-        title: ("Cart"),
-        activeColorPrimary: AppColors.blueColor,
-        inactiveColorPrimary: AppColors.greyColor,
-      ),
-      PersistentBottomNavBarItem(
-        icon: ImageIcon(AssetImage(AppImages.offers)),
-        title: ("Offers"),
-        activeColorPrimary: AppColors.blueColor,
-        inactiveColorPrimary: AppColors.greyColor,
-      ),
-      // The middle Add button
-      PersistentBottomNavBarItem(
-        icon: Container(
-          height: 120,
-          width: 120,
-          decoration: BoxDecoration(
-            color: AppColors.blueColor,
-            shape: BoxShape.circle,
-          ),
-          child: const ImageIcon(AssetImage(AppImages.home)),
-        ),
-        activeColorPrimary: Colors.white,
-        inactiveColorPrimary: Colors.transparent,
-      ),
-      PersistentBottomNavBarItem(
-        icon: ImageIcon(AssetImage(AppImages.categories)),
-        title: ("Categories"),
-        activeColorPrimary: AppColors.blueColor,
-        inactiveColorPrimary: AppColors.greyColor,
-      ),
-      PersistentBottomNavBarItem(
-        icon: ImageIcon(AssetImage(AppImages.profile)),
-        title: ("Profile"),
-        activeColorPrimary: AppColors.blueColor,
-        inactiveColorPrimary: AppColors.greyColor,
-      ),
-    ];
+  final List<Map<String, dynamic>> navItems = [
+    {'icon': AppImages.offers, 'label': 'Offers'},
+    {'icon': AppImages.cart, 'label': 'Cart'},
+    {'icon': AppImages.home, 'label': 'Home'},
+    {'icon': AppImages.categories, 'label': 'Categories'},
+    {'icon': AppImages.profile, 'label': 'Profile'},
+  ];
+  final List<Map<String, dynamic>> categories = [
+    {
+      'image': AppImages.category2,
+      'title': 'Ride-on and scooters',
+      'color': Color(0xffD2F1FF),
+    },
+    {
+      'image': AppImages.category1,
+      'title': 'Play Sets',
+      'color': Color(0xffFFF8D0),
+    },
+  ];
+  final List brands = [
+    AppImages.barby,
+    AppImages.paw,
+    AppImages.lol,
+    AppImages.barby,
+    AppImages.paw,
+  ];
+  final List<Widget> screens = [
+    OffersView(),
+    Container(),
+    HomeView(),
+    CategoriesView(),
+    Container(),
+  ];
+  changeNavBarIndex(int index) {
+    selectedIndex = index;
+    emit(HomeChangeNavBarIndex());
   }
 }
