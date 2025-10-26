@@ -36,7 +36,7 @@ class HomeCubit extends Cubit<HomeState> {
     CartView(),
     HomeView(),
     CategoriesView(),
-    Container(),
+    ProfileView(),
   ];
   changeNavBarIndex(int index) {
     selectedIndex = index;

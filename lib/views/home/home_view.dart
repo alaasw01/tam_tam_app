@@ -10,6 +10,7 @@ import 'package:tam_tam_app/custom_widgets/custom_search_bar.dart';
 import 'package:tam_tam_app/views/cart/cart_view.dart';
 import 'package:tam_tam_app/views/categories/categories_view.dart';
 import 'package:tam_tam_app/views/offers/offers_view.dart';
+import 'package:tam_tam_app/views/profile/profile_view.dart';
 part 'cubit/home_cubit.dart';
 part 'cubit/home_state.dart';
 part 'widgets/custom_app_bar.dart';

@@ -28,5 +28,7 @@ class AppImages {
   static const String location = '$imageBase/location.png';
   static const String gift = '$imageBase/gift.png';
   static const String delivery = '$imageBase/delivery.png';
+  static const String cash = '$imageBase/cash.png';
+  static const String wallet = '$imageBase/wallet.png';
   static const String slideGroup = '$imageBase/slide_group.png';
 }

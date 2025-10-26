@@ -32,7 +32,7 @@ class ShippingAddress extends StatelessWidget {
             addNewAddress == true ? 'Add New Address' : 'Current Location',
             maxLines: 2,
             textAlign: TextAlign.center,
-            style: AppStyles.textStyle18.copyWith(color: Colors.grey.shade300),
+            style: AppStyles.textStyle18.copyWith(color: Colors.grey.shade400),
           ),
         ],
       ),
