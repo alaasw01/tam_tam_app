@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tam_tam_app/constants/constants.dart';
 import 'package:tam_tam_app/core/routing/router.dart';
 import 'package:tam_tam_app/core/routing/routes_name.dart';
 
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       onGenerateRoute: RouterClass.generateRoute,
       initialRoute: RouteNames.splash,
+      navigatorKey: AppConstants.navigatorKey,
       title: 'Flutter Demo',
       theme: ThemeData(
         fontFamily: 'Poppins',

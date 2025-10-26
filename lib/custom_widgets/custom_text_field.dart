@@ -3,7 +3,7 @@ import 'package:tam_tam_app/constants/app_color.dart';
 import 'package:tam_tam_app/constants/app_style.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  final String label;
+  final String? label;
   final String? hint;
   final TextEditingController? controller;
   final bool obscureText;
@@ -15,7 +15,7 @@ class CustomTextFormField extends StatelessWidget {
 
   const CustomTextFormField({
     super.key,
-    required this.label,
+    this.label,
     this.controller,
     this.hint,
     this.obscureText = false,
