@@ -7,6 +7,7 @@ import 'package:tam_tam_app/constants/app_style.dart';
 import 'package:tam_tam_app/custom_widgets/custom_category.dart';
 import 'package:tam_tam_app/custom_widgets/custom_item.dart';
 import 'package:tam_tam_app/custom_widgets/custom_search_bar.dart';
+import 'package:tam_tam_app/views/cart/cart_view.dart';
 import 'package:tam_tam_app/views/categories/categories_view.dart';
 import 'package:tam_tam_app/views/offers/offers_view.dart';
 part 'cubit/home_cubit.dart';

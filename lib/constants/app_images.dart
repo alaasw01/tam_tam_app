@@ -24,5 +24,9 @@ class AppImages {
   static const String paw = '$imageBase/paw.png';
   static const String lol = '$imageBase/lol.png';
   static const String fire = '$imageBase/fire.png';
+  static const String delete = '$imageBase/delete.png';
+  static const String location = '$imageBase/location.png';
+  static const String gift = '$imageBase/gift.png';
+  static const String delivery = '$imageBase/delivery.png';
   static const String slideGroup = '$imageBase/slide_group.png';
 }

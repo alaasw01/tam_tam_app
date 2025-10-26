@@ -34,7 +34,11 @@ class OffersView extends StatelessWidget {
           slivers: [
             SliverToBoxAdapter(
               child: Column(
-                children: [CustomSearchBar(), const SizedBox(height: 20)],
+                children: [
+                  const SizedBox(height: 20),
+                  CustomSearchBar(),
+                  const SizedBox(height: 20),
+                ],
               ),
             ),
 
