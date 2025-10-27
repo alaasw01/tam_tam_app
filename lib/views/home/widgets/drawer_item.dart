@@ -22,7 +22,7 @@ class DrawerItem extends StatelessWidget {
             const SizedBox(width: 15),
             Text(
               title,
-              style: AppStyles.textStyle18.copyWith(
+              style: AppStyles.textStyle16.copyWith(
                 fontWeight: FontWeight.w700,
                 color: Colors.white,
               ),

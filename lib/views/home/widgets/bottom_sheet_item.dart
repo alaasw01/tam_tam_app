@@ -25,7 +25,7 @@ class BottomSheetItem extends StatelessWidget {
         ),
         child: Text(
           title,
-          style: AppStyles.textStyle18.copyWith(
+          style: AppStyles.textStyle14.copyWith(
             color: selectedItem == true ? Colors.white : Colors.black,
           ),
         ),

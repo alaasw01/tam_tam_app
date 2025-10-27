@@ -55,7 +55,7 @@ class CustomBottomNavBar extends StatelessWidget {
                                 color: Colors.white,
                               ),
                             ),
-                            const SizedBox(height: 5),
+                            const SizedBox(height: 2),
                             if (cubit.selectedIndex == index)
                               Text(
                                 cubit.navItems[index]['label'],
