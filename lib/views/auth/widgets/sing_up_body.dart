@@ -13,7 +13,10 @@ class SignUpBody extends StatelessWidget {
         SizedBox(height: 15),
         CustomTextFormField(
           label: 'Date Of Birth',
-          suffixIcon: Icon(Icons.calendar_today_rounded),
+          suffixIcon: Icon(
+            Icons.calendar_today_rounded,
+            color: AppColors.blueColor,
+          ),
           controller: cubit.birthDateController,
         ),
         SizedBox(height: 15),
@@ -34,8 +37,8 @@ class SignUpBody extends StatelessWidget {
           onSuffixIconTap: cubit.changeVisibility,
           obscureText: cubit.obscureText,
           suffixIcon: cubit.obscureText == true
-              ? Icon(Icons.visibility_off)
-              : Icon(Icons.visibility),
+              ? Icon(Icons.visibility_off, color: AppColors.blueColor)
+              : Icon(Icons.visibility, color: AppColors.blueColor),
           keyboardType: TextInputType.visiblePassword,
           controller: cubit.passwordController,
         ),
