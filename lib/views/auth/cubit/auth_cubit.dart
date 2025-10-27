@@ -23,4 +23,17 @@ class AuthCubit extends Cubit<AuthState> {
     obscureText = !obscureText;
     emit(AuthInitialUpdateVisibility());
   }
+
+  @override
+  Future<void> close() {
+    nameController.dispose();
+    loginPasswordController.dispose();
+    loginPhoneNumberController.dispose();
+    emailController.dispose();
+    birthDateController.dispose();
+    phoneNumberController.dispose();
+    passwordController.dispose();
+    confirmPasswordController.dispose();
+    return super.close();
+  }
 }

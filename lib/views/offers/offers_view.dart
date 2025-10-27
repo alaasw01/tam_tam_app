@@ -57,7 +57,7 @@ class OffersView extends StatelessWidget {
                 crossAxisCount: 2,
                 crossAxisSpacing: 4,
                 mainAxisSpacing: 10,
-                childAspectRatio: 0.68,
+                childAspectRatio: 0.65,
               ),
             ),
           ],

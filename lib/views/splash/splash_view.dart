@@ -66,7 +66,7 @@ class _SplashViewState extends State<SplashView>
               ),
             );
           },
-          child: Image.asset(AppImages.logo),
+          child: Image.asset(AppImages.logo, height: 200, fit: BoxFit.fill),
         ),
       ),
     );
