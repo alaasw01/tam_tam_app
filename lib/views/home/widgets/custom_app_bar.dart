@@ -1,13 +1,14 @@
 part of '../home_view.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
+  final void Function()? onMenuTap;
+
+  const CustomAppBar({super.key, required this.onMenuTap});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
       children: [
         Row(
           spacing: 5,
@@ -25,7 +26,10 @@ class CustomAppBar extends StatelessWidget {
           spacing: 20,
           children: [
             Image.asset(AppImages.notification),
-            Image.asset(AppImages.menu),
+            GestureDetector(
+              onTap: onMenuTap,
+              child: Image.asset(AppImages.menu),
+            ),
           ],
         ),
       ],

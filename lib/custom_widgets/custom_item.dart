@@ -52,10 +52,10 @@ class CustomItem extends StatelessWidget {
                       onTap: onFavoriteTap,
                       child: Icon(
                         isFavorite
-                            ? Icons.favorite
+                            ? Icons.favorite_rounded
                             : Icons.favorite_border_rounded,
                         color: isFavorite
-                            ? Colors.pinkAccent
+                            ? Color(0xffC084FC)
                             : AppColors.greyColor,
                         size: 30,
                       ),
@@ -68,10 +68,10 @@ class CustomItem extends StatelessWidget {
                     onTap: onFavoriteTap,
                     child: Icon(
                       isFavorite
-                          ? Icons.favorite
+                          ? Icons.favorite_rounded
                           : Icons.favorite_border_rounded,
                       color: isFavorite
-                          ? Colors.pinkAccent
+                          ? Color(0xffC084FC)
                           : AppColors.greyColor,
                       size: 30,
                     ),
@@ -87,7 +87,7 @@ class CustomItem extends StatelessWidget {
             style: AppStyles.textStyle16.copyWith(fontWeight: FontWeight.w700),
           ),
           // const Spacer(),
-          const SizedBox(height: 30),
+          const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

@@ -4,7 +4,8 @@ import 'package:tam_tam_app/constants/app_images.dart';
 import 'package:tam_tam_app/custom_widgets/custom_text_field.dart';
 
 class CustomSearchBar extends StatelessWidget {
-  const CustomSearchBar({super.key});
+  const CustomSearchBar({super.key, this.onSuffixIconTap});
+  final void Function()? onSuffixIconTap;
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +24,7 @@ class CustomSearchBar extends StatelessWidget {
           child: Image.asset(AppImages.filter),
         ),
       ),
+      onSuffixIconTap: onSuffixIconTap,
     );
   }
 }

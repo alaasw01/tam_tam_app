@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tam_tam_app/core/routing/routes_name.dart';
 import 'package:tam_tam_app/views/checkout/checkout_view.dart';
+import 'package:tam_tam_app/views/favorites/favorites_view.dart';
 import 'package:tam_tam_app/views/home/bottom_navigation_bar.dart';
 import 'package:tam_tam_app/views/home/home_view.dart';
 import 'package:tam_tam_app/views/auth/auth_view.dart';
@@ -25,6 +26,8 @@ class RouterClass {
         return MaterialPageRoute(builder: (_) => const CustomBottomNavBar());
       case RouteNames.checkout:
         return MaterialPageRoute(builder: (_) => const CheckoutView());
+      case RouteNames.favorites:
+        return MaterialPageRoute(builder: (_) => const FavoritesView());
 
       default:
         return MaterialPageRoute(

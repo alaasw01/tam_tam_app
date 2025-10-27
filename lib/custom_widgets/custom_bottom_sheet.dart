@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:tam_tam_app/constants/constants.dart';
 
-Future<void> showCustomBottomSheet(
-  BuildContext context, {
-  required Widget child,
-  double? height,
-}) {
+Future<void> showCustomBottomSheet({required Widget child, double? height}) {
   return showModalBottomSheet(
-    context: context,
+    context: AppConstants.navigatorKey.currentContext!,
     shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      borderRadius: BorderRadius.vertical(top: Radius.circular(50)),
     ),
     builder: (_) => SizedBox(width: double.infinity, child: child),
   );

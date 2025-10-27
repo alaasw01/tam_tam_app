@@ -56,8 +56,8 @@ class OffersView extends StatelessWidget {
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 crossAxisSpacing: 4,
-                mainAxisSpacing: 8,
-                childAspectRatio: 0.65,
+                mainAxisSpacing: 10,
+                childAspectRatio: 0.68,
               ),
             ),
           ],
