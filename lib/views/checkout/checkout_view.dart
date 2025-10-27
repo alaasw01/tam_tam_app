@@ -53,7 +53,7 @@ class CheckoutView extends StatelessWidget {
                     SizedBox(height: 40),
                     Text(
                       'Shipping Address',
-                      style: AppStyles.textStyle20.copyWith(
+                      style: AppStyles.textStyle18.copyWith(
                         fontWeight: FontWeight.w700,
                       ),
                     ),
@@ -91,7 +91,7 @@ class CheckoutView extends StatelessWidget {
                           SizedBox(width: 10),
                           Text(
                             'Send As Gift',
-                            style: AppStyles.textStyle20.copyWith(
+                            style: AppStyles.textStyle16.copyWith(
                               color: AppColors.greyColor,
                             ),
                           ),
@@ -101,7 +101,7 @@ class CheckoutView extends StatelessWidget {
                     SizedBox(height: 20),
                     Text(
                       'Order Summary',
-                      style: AppStyles.textStyle20.copyWith(
+                      style: AppStyles.textStyle18.copyWith(
                         fontWeight: FontWeight.w700,
                       ),
                     ),
@@ -122,12 +122,12 @@ class CheckoutView extends StatelessWidget {
                         children: [
                           Text(
                             'Gift wrapping :  IQD 7.00',
-                            style: AppStyles.textStyle18.copyWith(
+                            style: AppStyles.textStyle14.copyWith(
                               color: Colors.grey.shade400,
                             ),
                           ),
                           Transform.scale(
-                            scale: 1.15,
+                            scale: 1.1,
                             child: Switch(
                               activeThumbColor: AppColors.blueColor,
                               inactiveThumbColor: Colors.grey,
@@ -149,7 +149,7 @@ class CheckoutView extends StatelessWidget {
                     SizedBox(height: 20),
                     Text(
                       'Coupon',
-                      style: AppStyles.textStyle20.copyWith(
+                      style: AppStyles.textStyle18.copyWith(
                         fontWeight: FontWeight.w700,
                       ),
                     ),
@@ -174,7 +174,7 @@ class CheckoutView extends StatelessWidget {
                     SizedBox(height: 20),
                     Text(
                       'Payment Summary',
-                      style: AppStyles.textStyle20.copyWith(
+                      style: AppStyles.textStyle18.copyWith(
                         fontWeight: FontWeight.w700,
                       ),
                     ),
@@ -212,12 +212,12 @@ class CheckoutView extends StatelessWidget {
                       children: [
                         Text(
                           'Pay Via Wallet',
-                          style: AppStyles.textStyle20.copyWith(
+                          style: AppStyles.textStyle18.copyWith(
                             fontWeight: FontWeight.w700,
                           ),
                         ),
                         Transform.scale(
-                          scale: 1.15,
+                          scale: 1.1,
                           child: Switch(
                             activeThumbColor: AppColors.blueColor,
                             inactiveThumbColor: Colors.grey,
@@ -249,7 +249,7 @@ class CheckoutView extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text('Wallet Balance', style: AppStyles.textStyle16),
+                          Text('Wallet Balance', style: AppStyles.textStyle14),
                           Text(
                             'IQD 000.00',
                             style: AppStyles.textStyle14.copyWith(
@@ -262,7 +262,7 @@ class CheckoutView extends StatelessWidget {
                     SizedBox(height: 20),
                     Text(
                       'Payment Method',
-                      style: AppStyles.textStyle20.copyWith(
+                      style: AppStyles.textStyle18.copyWith(
                         fontWeight: FontWeight.w700,
                       ),
                     ),

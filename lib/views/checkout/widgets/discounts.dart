@@ -32,7 +32,7 @@ class Discounts extends StatelessWidget {
           children: [
             Text(
               '$discount% Discount',
-              style: AppStyles.textStyle16.copyWith(
+              style: AppStyles.textStyle14.copyWith(
                 color: isSelected == true ? AppColors.blueColor : Colors.black,
               ),
             ),

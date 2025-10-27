@@ -41,12 +41,15 @@ class CustomItem extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      padding: EdgeInsets.symmetric(horizontal: 15),
                       decoration: BoxDecoration(
                         color: Color(0xFFF7B3DD),
                         borderRadius: BorderRadius.circular(50),
                       ),
-                      child: Text('10%', style: AppStyles.textStyle14),
+                      child: Text(
+                        '10%',
+                        style: AppStyles.textStyle14.copyWith(fontSize: 12),
+                      ),
                     ),
                     GestureDetector(
                       onTap: onFavoriteTap,
@@ -84,16 +87,16 @@ class CustomItem extends StatelessWidget {
             title,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: AppStyles.textStyle16.copyWith(fontWeight: FontWeight.w700),
+            style: AppStyles.textStyle14.copyWith(fontWeight: FontWeight.w700),
           ),
-          // const Spacer(),
-          const SizedBox(height: 20),
+          const Spacer(),
+          // const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 price,
-                style: AppStyles.textStyle16.copyWith(
+                style: AppStyles.textStyle14.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -101,12 +104,13 @@ class CustomItem extends StatelessWidget {
                 onTap: onAddTap,
                 child: CircleAvatar(
                   backgroundColor: AppColors.blueColor,
-                  radius: 18,
+                  radius: 16,
                   child: const Icon(Icons.add, color: Colors.white, size: 22),
                 ),
               ),
             ],
           ),
+          const SizedBox(height: 10),
         ],
       ),
     );

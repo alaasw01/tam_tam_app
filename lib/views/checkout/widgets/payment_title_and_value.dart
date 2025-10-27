@@ -17,11 +17,11 @@ class PaymentTitleAndValue extends StatelessWidget {
         children: [
           Text(
             title,
-            style: AppStyles.textStyle18.copyWith(fontWeight: FontWeight.w700),
+            style: AppStyles.textStyle16.copyWith(fontWeight: FontWeight.w700),
           ),
           Text(
             value,
-            style: AppStyles.textStyle16.copyWith(
+            style: AppStyles.textStyle14.copyWith(
               fontWeight: FontWeight.w700,
               color: AppColors.blueColor,
             ),

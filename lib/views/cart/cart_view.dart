@@ -41,7 +41,7 @@ class CartView extends StatelessWidget {
                         width: MediaQuery.sizeOf(context).width * 0.45,
                         child: Text(
                           'Rainbocorns Fairycorn Pink Color with other toys',
-                          style: AppStyles.textStyle18.copyWith(
+                          style: AppStyles.textStyle16.copyWith(
                             fontWeight: FontWeight.w700,
                           ),
                           maxLines: 2,
@@ -51,7 +51,7 @@ class CartView extends StatelessWidget {
                       SizedBox(height: 10),
                       Text(
                         'IQD 700.00',
-                        style: AppStyles.textStyle16.copyWith(
+                        style: AppStyles.textStyle14.copyWith(
                           fontWeight: FontWeight.w700,
                         ),
                       ),
@@ -66,7 +66,7 @@ class CartView extends StatelessWidget {
                           ),
                           Text(
                             '1',
-                            style: AppStyles.textStyle20.copyWith(
+                            style: AppStyles.textStyle18.copyWith(
                               fontWeight: FontWeight.w700,
                             ),
                           ),

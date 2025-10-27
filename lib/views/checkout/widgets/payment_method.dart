@@ -36,7 +36,7 @@ class PaymentMethod extends StatelessWidget {
               spacing: 10,
               children: [
                 Image.asset(image),
-                Text(paymentMethod, style: AppStyles.textStyle16),
+                Text(paymentMethod, style: AppStyles.textStyle14),
               ],
             ),
             Icon(

@@ -17,7 +17,7 @@ class Coupon extends StatelessWidget {
             ),
             child: Text(
               'Code',
-              style: AppStyles.textStyle18.copyWith(
+              style: AppStyles.textStyle14.copyWith(
                 color: Colors.grey.shade400,
               ),
             ),
@@ -35,7 +35,7 @@ class Coupon extends StatelessWidget {
             child: Text(
               'Submit',
               textAlign: TextAlign.center,
-              style: AppStyles.textStyle18.copyWith(color: AppColors.blueColor),
+              style: AppStyles.textStyle14.copyWith(color: AppColors.blueColor),
             ),
           ),
         ),

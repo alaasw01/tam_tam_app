@@ -26,13 +26,13 @@ class OrderSummary extends StatelessWidget {
                   ),
                   Text(
                     'Delivery Date',
-                    style: AppStyles.textStyle16.copyWith(
+                    style: AppStyles.textStyle14.copyWith(
                       color: Colors.grey.shade400,
                     ),
                   ),
                 ],
               ),
-              Text('20/7/2025', style: AppStyles.textStyle16),
+              Text('20/7/2025', style: AppStyles.textStyle14),
             ],
           ),
           SizedBox(height: 10),
@@ -57,14 +57,14 @@ class OrderSummary extends StatelessWidget {
                       'Rainbocorns Fairycorn Pink Color with other toys',
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      style: AppStyles.textStyle18.copyWith(
+                      style: AppStyles.textStyle16.copyWith(
                         fontWeight: FontWeight.w700,
                       ),
                     ),
                   ),
                   Text(
                     '1 item',
-                    style: AppStyles.textStyle16.copyWith(
+                    style: AppStyles.textStyle14.copyWith(
                       fontWeight: FontWeight.w700,
                       color: Colors.grey.shade300,
                     ),
@@ -74,7 +74,7 @@ class OrderSummary extends StatelessWidget {
               Spacer(),
               Text(
                 'IQD 700.00',
-                style: AppStyles.textStyle16.copyWith(
+                style: AppStyles.textStyle14.copyWith(
                   color: AppColors.blueColor,
                 ),
               ),

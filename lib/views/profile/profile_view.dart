@@ -147,7 +147,7 @@ class ProfileView extends StatelessWidget {
     padding: const EdgeInsets.only(bottom: 10),
     child: Text(
       title,
-      style: AppStyles.textStyle18.copyWith(fontWeight: FontWeight.w700),
+      style: AppStyles.textStyle16.copyWith(fontWeight: FontWeight.w700),
     ),
   );
 }
